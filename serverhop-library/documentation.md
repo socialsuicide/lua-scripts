@@ -59,7 +59,7 @@ Usage of ServerHop:Rejoin() - Rejoins the exact same JobID.
 ```lua
 local ServerHop = loadstring(game:HttpGet("https://raw.githubusercontent.com/socialsuicide/lua-scripts/main/serverhop-library/src.lua"))();
 
-ServerHop:Rejoin(true)
+ServerHop:LowPing(true, nil, 250)
 ```
 ```text
 Usage of ServerHop:LowPing() - Scrapes JobIDs of servers with below or the inputed ping into a JSON file before selecting a random JobID to teleport too.
@@ -73,4 +73,24 @@ Usage of ServerHop:LowPing() - Scrapes JobIDs of servers with below or the input
 2) Ping:
     Usage: {int, nil},
     Action: Scrapes JobIDs with servers with below or inputed ping (nil = 100).
+```
+
+### ServerHop:LowPlayers()
+```lua
+local ServerHop = loadstring(game:HttpGet("https://raw.githubusercontent.com/socialsuicide/lua-scripts/main/serverhop-library/src.lua"))();
+
+ServerHop:LowPlayers(true, nil, 10)
+```
+```text
+Usage of ServerHop:LowPlayers() - Scrapes JobIDs of servers with below or the inputed amount of players.
+
+1) Logs:
+    Usage: {true, false},
+    Action: Outputs logs using rconsoleprint.
+2) Amount:
+    Usage: {int, nil},
+    Action: Scrapes a certain amount of JobIDs (nil = inf).
+2) Players:
+    Usage: {int, nil},
+    Action: Scrapes JobIDs of servers with below or the inputed amount of players (nil = Half of maxPlayers).
 ```
