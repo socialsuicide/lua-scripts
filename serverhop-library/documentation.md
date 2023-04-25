@@ -17,5 +17,5 @@ ServerHop:Normal(true, nil);
     Action: Outputs logs using rconsoleprint.
 2) Amount:
     Usage: {int, nil},
-    Action: Scrapes a certian amount of JobIDs (nil = inf).
+    Action: Scrapes a certain amount of JobIDs (nil = inf).
 ```
