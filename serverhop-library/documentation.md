@@ -4,3 +4,10 @@
 ```lua
 local ServerHop = loadstring(game:HttpGet("https://raw.githubusercontent.com/socialsuicide/lua-scripts/main/serverhop-library/src.lua"))();
 ```
+
+## Using functions.
+```lua
+local ServerHop = loadstring(game:HttpGet("https://raw.githubusercontent.com/socialsuicide/lua-scripts/main/serverhop-library/src.lua"))();
+
+ServerHop:Normal(true, nil);
+```
