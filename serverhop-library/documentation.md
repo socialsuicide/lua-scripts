@@ -127,4 +127,4 @@ Usage of ServerHop:JoinJobID() - Joins the inputed JobID.
 ```
 
 ## Examples
-> https://raw.githubusercontent.com/socialsuicide/lua-scripts/main/serverhop-library/example.lua
+> [https://raw.githubusercontent.com/socialsuicide/lua-scripts/main/serverhop-library/example.lua](https://github.com/socialsuicide/lua-scripts/blob/main/serverhop-library/example.lua)
