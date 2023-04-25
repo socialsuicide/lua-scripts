@@ -40,3 +40,17 @@ Usage of ServerHop:Dynamic() - Scrapes JobIDs which havent been used in the past
     Usage: {int, nil},
     Action: Scrapes a certain amount of JobIDs (nil = inf).
 ```
+
+### ServerHop:Rejoin()
+```lua
+local ServerHop = loadstring(game:HttpGet("https://raw.githubusercontent.com/socialsuicide/lua-scripts/main/serverhop-library/src.lua"))();
+
+ServerHop:Rejoin(true)
+```
+```text
+Usage of ServerHop:Rejoin() - Rejoins the exact same JobID.
+
+1) Logs:
+    Usage: {true, false},
+    Action: Outputs logs using rconsoleprint.
+```
