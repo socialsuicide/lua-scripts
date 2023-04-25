@@ -1,6 +1,6 @@
 -- hi! feel free to use any of this code for your own projects or use the libary for your projects. i know its a little messy because i rushed it (with no sleep as well 😴) but it works well enough.
 
-local ServerHop = {}; -- init
+local Serverhop = {}; -- init
 
 local API, ServerPages;
 
@@ -12,7 +12,7 @@ local function CreateFiles(FileName, File)
     end)
 end
 
-function ServerHop:Normal(Logs, Amount)
+function Serverhop:Normal(Logs, Amount)
     if Amount == nil then Amount = tonumber(math.huge) end;
     local JobIDs = {};
     local function FetchJobIDs()
@@ -59,7 +59,7 @@ function ServerHop:Normal(Logs, Amount)
     end)
 end
 
-function ServerHop:Dynamic(Logs, Amount)
+function Serverhop:Dynamic(Logs, Amount)
     if Amount == nil then Amount = tonumber(math.huge) end;
     local JobIDs = {};
     local OldJobIDs = {os.date("*t").hour};
@@ -126,7 +126,7 @@ function ServerHop:Dynamic(Logs, Amount)
     end)
 end
 
-function ServerHop:Rejoin(Logs)
+function Serverhop:Rejoin(Logs)
     if Logs then rconsolename("severhop-libary.lua ; seth.#0001 - ".. string.format("%02i:%02i %s", ((os.date("*t").hour % 24 - 1) % 12) + 1, os.date("*t").min, os.date("*t").hour % 24 < 12 and "AM" or "PM")) rconsoleprint("@@LIGHT_CYAN@@") rconsoleprint("[#] Rejoining server. \n") end;
     game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, game.JobId)
     game:GetService("Players").LocalPlayer.OnTeleport:Connect(function(Status)
@@ -136,7 +136,7 @@ function ServerHop:Rejoin(Logs)
     end)
 end
 
-function ServerHop:LowPing(Logs, Amount, Ping)
+function Serverhop:LowPing(Logs, Amount, Ping)
     if Ping == nil then Ping = 100 end;
     if Amount == nil then Amount = tonumber(math.huge) end;
     local JobIDs = {};
@@ -183,7 +183,7 @@ function ServerHop:LowPing(Logs, Amount, Ping)
     end)
 end
 
-function ServerHop:LowPlayers(Logs, Amount, Players)
+function Serverhop:LowPlayers(Logs, Amount, Players)
     if Players == nil then for i, v in next, game:GetService("HttpService"):JSONDecode(game:HttpGet("https://games.roblox.com/v1/games?universeIds=".. game.GameId))["data"] do Players = tonumber(v["maxPlayers"]) / 2 end end;
     if Amount == nil then Amount = tonumber(math.huge) end;
     local JobIDs = {};
@@ -230,7 +230,7 @@ function ServerHop:LowPlayers(Logs, Amount, Players)
     end)
 end
 
-function ServerHop:Instant(Logs)
+function Serverhop:Instant(Logs)
     local JobIDs = {};
     for i, v in next, game:GetService("HttpService"):JSONDecode(game:HttpGet("https://games.roblox.com/v1/games/".. game.PlaceId .."/servers/Public?sortOrder=Asc&limit=100"))["data"] do
         if v["id"] ~= game.PlaceId and v["playing"] ~= v["maxPlayers"] then
@@ -253,7 +253,7 @@ function ServerHop:Instant(Logs)
     end)
 end
 
-function ServerHop:JoinJobID(Logs, JobID)
+function Serverhop:JoinJobID(Logs, JobID)
     if Logs then rconsolename("severhop-libary.lua ; seth.#0001 - ".. string.format("%02i:%02i %s", ((os.date("*t").hour % 24 - 1) % 12) + 1, os.date("*t").min, os.date("*t").hour % 24 < 12 and "AM" or "PM")) rconsoleprint("@@LIGHT_CYAN@@") rconsoleprint("[#] Attempting to join ".. JobID ..". \n") end;
     game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, JobID)
     game:GetService("Players").LocalPlayer.OnTeleport:Connect(function(Status)
@@ -263,4 +263,4 @@ function ServerHop:JoinJobID(Logs, JobID)
     end)
 end
 
-return ServerHop;
+return Serverhop;
