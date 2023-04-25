@@ -11,7 +11,6 @@ local ServerHop = loadstring(game:HttpGet("https://raw.githubusercontent.com/soc
 
 ServerHop:Normal(true, nil);
 ```
-
 ```text
 Usage of ServerHop:Normal() - Scrapes JobIDs and saves them into a JSON file before selecting a random JobID to teleport too.
 
