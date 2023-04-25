@@ -6,8 +6,8 @@ local ServerHop = loadstring(game:HttpGet("https://raw.githubusercontent.com/soc
 ```
 
 ## Using functions.
-‎‎‎‎‎‎‎‎ㅤ
-> ServerHop:Normal()
+
+### ServerHop:Normal()
 ```lua
 local ServerHop = loadstring(game:HttpGet("https://raw.githubusercontent.com/socialsuicide/lua-scripts/main/serverhop-library/src.lua"))();
 
@@ -23,8 +23,8 @@ Usage of ServerHop:Normal() - Scrapes JobIDs and saves them into a JSON file bef
     Usage: {int, nil},
     Action: Scrapes a certain amount of JobIDs (nil = inf).
 ```
-‎‎‎‎‎‎‎‎
-> ServerHop:Dynamic()
+
+### ServerHop:Dynamic()
 ```lua
 local ServerHop = loadstring(game:HttpGet("https://raw.githubusercontent.com/socialsuicide/lua-scripts/main/serverhop-library/src.lua"))();
 
@@ -40,8 +40,8 @@ Usage of ServerHop:Dynamic() - Scrapes JobIDs which havent been used in the past
     Usage: {int, nil},
     Action: Scrapes a certain amount of JobIDs (nil = inf).
 ```
-‎‎‎‎‎‎‎‎ㅤ
-> ServerHop:Rejoin()
+
+### ServerHop:Rejoin()
 ```lua
 local ServerHop = loadstring(game:HttpGet("https://raw.githubusercontent.com/socialsuicide/lua-scripts/main/serverhop-library/src.lua"))();
 
@@ -54,8 +54,8 @@ Usage of ServerHop:Rejoin() - Rejoins the exact same JobID.
     Usage: {true, false},
     Action: Outputs logs using rconsoleprint.
 ```
-‎‎‎‎‎‎‎‎ㅤ
-> ServerHop:LowPing()
+
+### ServerHop:LowPing()
 ```lua
 local ServerHop = loadstring(game:HttpGet("https://raw.githubusercontent.com/socialsuicide/lua-scripts/main/serverhop-library/src.lua"))();
 
@@ -74,8 +74,8 @@ Usage of ServerHop:LowPing() - Scrapes JobIDs of servers with below or the input
     Usage: {int, nil},
     Action: Scrapes JobIDs with servers with below or inputed ping (nil = 100).
 ```
-‎‎‎‎‎‎‎‎ㅤ
-> ServerHop:LowPlayers()
+
+### ServerHop:LowPlayers()
 ```lua
 local ServerHop = loadstring(game:HttpGet("https://raw.githubusercontent.com/socialsuicide/lua-scripts/main/serverhop-library/src.lua"))();
 
@@ -94,8 +94,8 @@ Usage of ServerHop:LowPlayers() - Scrapes JobIDs of servers with below or the in
     Usage: {int, nil},
     Action: Scrapes JobIDs of servers with below or the inputed amount of players (nil = Half of maxPlayers).
 ```
-‎‎‎‎‎‎‎‎ㅤ
-> ServerHop:Instant()
+
+### ServerHop:Instant()
 ```lua
 local ServerHop = loadstring(game:HttpGet("https://raw.githubusercontent.com/socialsuicide/lua-scripts/main/serverhop-library/src.lua"))();
 
@@ -108,8 +108,8 @@ Usage of ServerHop:Instant() - Instantly joins another JobID without using JSON.
     Usage: {true, false},
     Action: Outputs logs using rconsoleprint.
 ```
-‎‎‎‎‎‎‎‎ㅤ
-> ServerHop:JoinJobID()
+
+### ServerHop:JoinJobID()
 ```lua
 local ServerHop = loadstring(game:HttpGet("https://raw.githubusercontent.com/socialsuicide/lua-scripts/main/serverhop-library/src.lua"))();
 
