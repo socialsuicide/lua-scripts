@@ -6,7 +6,7 @@ local ServerHop = loadstring(game:HttpGet("https://raw.githubusercontent.com/soc
 ```
 
 ## Using functions.
-‎‎‎‎‎‎‎‎
+
 ### ServerHop:Normal()
 ```lua
 local ServerHop = loadstring(game:HttpGet("https://raw.githubusercontent.com/socialsuicide/lua-scripts/main/serverhop-library/src.lua"))();
@@ -127,3 +127,4 @@ Usage of ServerHop:JoinJobID() - Joins the inputed JobID.
 ```
 
 ## Examples
+> https://raw.githubusercontent.com/socialsuicide/lua-scripts/main/serverhop-library/example.lua
