@@ -23,6 +23,8 @@ Usage of ServerHop:Normal() - Scrapes JobIDs and saves them into a JSON file bef
     Usage: {int, nil},
     Action: Scrapes a certain amount of JobIDs (nil = inf).
 ```
+
+### ServerHop:Dynamic()
 ```lua
 local ServerHop = loadstring(game:HttpGet("https://raw.githubusercontent.com/socialsuicide/lua-scripts/main/serverhop-library/src.lua"))();
 
