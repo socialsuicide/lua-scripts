@@ -1,4 +1,4 @@
--- Auto collect orbs - Game: Legends Of Speed
+-- Auto collect orbs / Game: Legends Of Speed
 
 -- First we need to create a variable with the serverhop libary loadstring.
 local Serverhop = loadstring(game:HttpGet("https://raw.githubusercontent.com/socialsuicide/lua-scripts/main/serverhop-library/src.lua"))();
