@@ -12,6 +12,8 @@ local ServerHop = loadstring(game:HttpGet("https://raw.githubusercontent.com/soc
 ServerHop:Normal(true, nil);
 ```
 ```text
+Usage of ServerHop:Normal(): nil
+
 1) Logs:
     Usage: {true, false},
     Action: Outputs logs using rconsoleprint.
