@@ -5,5 +5,5 @@
 ## Documentation
 > https://github.com/socialsuicide/lua-scripts/blob/main/serverhop-library/documentation.md
 
-## examples
+## Examples
 > https://github.com/socialsuicide/lua-scripts/tree/main/serverhop-library/examples
