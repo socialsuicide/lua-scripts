@@ -1,4 +1,4 @@
--- Auto gain strength - Game: Muscle Legends
+-- Auto gain strength / Game: Muscle Legends
 
 -- First we need to create a variable with the serverhop libary loadstring.
 local Serverhop = loadstring(game:HttpGet("https://raw.githubusercontent.com/socialsuicide/lua-scripts/main/serverhop-library/src.lua"))();
